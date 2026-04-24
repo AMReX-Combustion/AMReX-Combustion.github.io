@@ -93,332 +93,492 @@ Supercritical Carbon Dioxide Turbine, 2023 APS Gallery of Fluid Motion<br>
 
             This list summarizes the publications that document the development of the Pele codes and introduction of significant new algorithms or features. When publishing research that relied on use of the Pele codes, it may be appropriate to cite one or multiple of these publications depending on the capabilities utilized.
 
-            <ol>
-              <li><b>Pele Suite: Overall Summary</b> <br>
-Henry de Frahan, Marc T., et al. &quot;The Pele Simulation Suite for Reacting
-Flows at Exascale.&quot;&nbsp;<i>Proceedings of the 2024 SIAM Conference on
-Parallel Processing for Scientific Computing (PP)</i>. Society for Industrial
-and Applied Mathematics, 2024. <a
-href="https://doi.org/10.1137/1.9781611977967.2">https://doi.org/10.1137/1.9781611977967.2</a></li>
-              <li><b>PeleC: Initial Development</b><br>
-Sitaraman, Hariswaran, et al. &quot;Adaptive mesh based combustion simulations
-of direct fuel injection effects in a supersonic cavity
-flame-holder.&quot;&nbsp;<i>Combustion and Flame</i>&nbsp;232 (2021): 111531.
-<a href="https://doi.org/10.1016/j.combustflame.2021.111531">https://doi.org/10.1016/j.combustflame.2021.111531</a></li>
-              <li><b>PeleC: Performance and GPU Capability<br>
-</b>Henry de Frahan, Marc T., et al. &quot;PeleC: An adaptive mesh refinement
-solver for compressible reacting flows.&quot;&nbsp;<i>The International Journal
-of High Performance Computing Applications</i>&nbsp;37.2 (2023): 115-131. <span
-style='font-size:10.5pt;font-family:"Open Sans",sans-serif'><a
-href="https://doi.org/10.1177/1094342022112115">https://doi.org/10.1177/1094342022112115</a></span></li>
-              <li><b>PeleLMeX: Software Development</b><br>
-Esclapez, Lucas, et al. &quot;PeleLMeX: an AMR Low Mach Number Reactive Flow
-Simulation Code without level sub-cycling.&quot;&nbsp;<i>Journal of Open Source
-Software</i>&nbsp;8.90 (2023): 5450. <a
-href="https://doi.org/10.21105/joss.05450">https://doi.org/10.21105/joss.05450</a></li>
-              <li><b>PelePhysics: CEPTR Utility and Chemical Jacobian Capability<br>
-</b>Hassanaly, Malik, et al. &quot;Symbolic construction of the chemical
-Jacobian of quasi-steady state (QSS) chemistries for Exascale computing
-platforms.&quot;&nbsp;<i>Combustion and Flame </i>270 (2024) 113740. <a
-href="https://doi.org/10.1016/j.combustflame.2024.113740" target="_blank"
-title="Persistent link using digital object identifier">https://doi.org/10.1016/j.combustflame.2024.113740</a></li>
-              <li><b>PelePhysics: Spray, Soot, and Radiation Modules</b><br>
-Owen, Landon D., et al. &quot;PeleMP: The Multiphysics Solver for the
-Combustion Pele Adaptive Mesh Refinement Code Suite.&quot;&nbsp;<i>Journal of
-Fluids Engineering</i>&nbsp;146.4 (2024): 041103. <a
-href="https://doi.org/10.1115/1.4064494">https://doi.org/10.1115/1.4064494</a></li>
-              <li><b>PelePhysics: Use of SUNDIALS Library for Chemistry Integration</b><br>
-Balos, Cody J., et al. &quot;SUNDIALS time integrators for exascale
-applications with many independent systems of ordinary differential
-equations.&quot;&nbsp;<i>The International Journal of High Performance
-Computing Applications</i>&nbsp;(2024): 10943420241280060. <a
-href="https://doi.org/10.1177/10943420241280060">https://doi.org/10.1177/10943420241280060</a></li>
-              <li><b>PeleC and PeleLMeX: Use of State Redistribution (from AMReX
-library)<br>
-</b>Giuliani, Andrew, et al. &quot;A weighted state redistribution algorithm
-for embedded boundary grids.&quot;&nbsp;<i>Journal of Computational Physics</i>&nbsp;464
-(2022): 111305. <a href="https://doi.org/10.1016/j.jcp.2022.111305"
-target="_blank" title="Persistent link using digital object identifier">https://doi.org/10.1016/j.jcp.2022.111305</a></li>
-              <li><b>PeleC:</b> <b>Use of State Re-Redistribution</b> <b>(from AMReX
-library)</b><br>
-Sanchez, I. Barrio, et al. &quot;A new re-redistribution scheme for weighted
-state redistribution with adaptive mesh refinement.&quot;&nbsp;<i>Journal of
-Computational Physics</i>&nbsp;504 (2024): 112879. <a
-href="https://doi.org/10.1016/j.jcp.2024.112879" target="_blank"
-title="Persistent link using digital object identifier">https://doi.org/10.1016/j.jcp.2024.112879</a></li>
-              <li><b>PeleLMeX: Manifold-based
-Combustion Models</b><br>
-Perry, Bruce A., et al. “Simulation of a Jet Flame with Inhomogeneous Inlets
-Using Tabulated and Neural Network Manifold Models.” <i> U.S. National
-Combustion Meeting. 2023</i>. <a
-href="https://research-hub.nrel.gov/en/publications/simulation-of-a-jet-flame-with-inhomogeneous-inlets-using-tabulat">https://research-hub.nrel.gov/en/publications/simulation-of-a-jet-flame-with-inhomogeneous-inlets-using-tabulat</a> </li>
-              <li><b>Pele Suite: Exascale
-Performance <br>
-</b>Malaya, Nicholas, et al. &quot;Experiences readying applications for Exascale.&quot;
-<i>Proceedings of the International Conference for High Performance Computing,
-Networking, Storage and Analysis</i>. 2023. <a
-href="https://doi.org/10.1145/3581784.360706">https://doi.org/10.1145/3581784.360706</a></li>
-            </ol>
+            <!-- DevPubs -->
+
+<ol>
+<li><b>Pele Suite: Overall summary.</b>
+<br>M.&nbsp;T. Henry&nbsp;de Frahan, L.&nbsp;Esclapez, J.&nbsp;Rood, N.&nbsp;T. Wimer, P.&nbsp;Mullowney, B.&nbsp;A. Perry, L.&nbsp;Owen, H.&nbsp;Sitaraman, S.&nbsp;Yellapantula, M.&nbsp;Hassanaly, M.&nbsp;J. Rahimi, M.&nbsp;J. Martin, O.&nbsp;A. Doronina, S.&nbsp;N.&nbsp;A., M.&nbsp;Rieth, W.&nbsp;Ge, R.&nbsp;Sankaran, A.&nbsp;S. Almgren, W.&nbsp;Zhang, J.&nbsp;B. Bell, R.&nbsp;Grout, M.&nbsp;S. Day, and J.&nbsp;H. Chen.
+The <span class="bibtex-protected">Pele</span> <span class="bibtex-protected">Simulation</span> <span class="bibtex-protected">Suite</span> for <span class="bibtex-protected">Reacting</span> <span class="bibtex-protected">Flows</span> at <span class="bibtex-protected">Exascale</span>.
+In <em>Proceedings of the 2024 <span class="bibtex-protected">SIAM</span> <span class="bibtex-protected">Conference</span> on <span class="bibtex-protected">Parallel</span> <span class="bibtex-protected">Processing</span> for <span class="bibtex-protected">Scientific</span> <span class="bibtex-protected">Computing</span> (<span class="bibtex-protected">PP</span>)</em>, Proceedings, pages 13–25.
+Society for Industrial and Applied Mathematics, January 2024.
+<a href="https://doi.org/10.1137/1.9781611977967.2">doi:10.1137/1.9781611977967.2</a>.</li>
+<li><b>PeleC: Initial Development.</b>
+<br>H.&nbsp;Sitaraman, S.&nbsp;Yellapantula, M.&nbsp;T. Henry De&nbsp;Frahan, B.&nbsp;Perry, J.&nbsp;Rood, R.&nbsp;Grout, and M.&nbsp;Day.
+Adaptive mesh based combustion simulations of direct fuel injection effects in a supersonic cavity flame-holder.
+<em>Combustion and Flame</em>, 232:111531, October 2021.
+<a href="https://doi.org/10.1016/j.combustflame.2021.111531">doi:10.1016/j.combustflame.2021.111531</a>.</li>
+<li><b>PeleC: Performance and GPU Capability.</b>
+<br>M.&nbsp;T. Henry&nbsp;de Frahan, J.&nbsp;S. Rood, M.&nbsp;S. Day, H.&nbsp;Sitaraman, S.&nbsp;Yellapantula, B.&nbsp;A. Perry, R.&nbsp;W. Grout, A.&nbsp;Almgren, W.&nbsp;Zhang, J.&nbsp;B. Bell, and J.&nbsp;H. Chen.
+<span class="bibtex-protected">PeleC</span>: <span class="bibtex-protected">An</span> adaptive mesh refinement solver for compressible reacting flows.
+<em>The International Journal of High Performance Computing Applications</em>, 37(2):115–131, March 2023.
+<a href="https://doi.org/10.1177/10943420221121151">doi:10.1177/10943420221121151</a>.</li>
+<li><b>PeleLMeX: Software Development.</b>
+<br>L.&nbsp;Esclapez, M.&nbsp;Day, J.&nbsp;Bell, A.&nbsp;Felden, C.&nbsp;Gilet, R.&nbsp;Grout, M.&nbsp;H.&nbsp;d. Frahan, E.&nbsp;Motheau, A.&nbsp;Nonaka, L.&nbsp;Owen, B.&nbsp;Perry, J.&nbsp;Rood, N.&nbsp;Wimer, and W.&nbsp;Zhang.
+<span class="bibtex-protected">PeleLMeX</span>: an <span class="bibtex-protected">AMR</span> <span class="bibtex-protected">Low</span> <span class="bibtex-protected">Mach</span> <span class="bibtex-protected">Number</span> <span class="bibtex-protected">Reactive</span> <span class="bibtex-protected">Flow</span> <span class="bibtex-protected">Simulation</span> <span class="bibtex-protected">Code</span> without level sub-cycling.
+<em>Journal of Open Source Software</em>, 8(90):5450, October 2023.
+<a href="https://doi.org/10.21105/joss.05450">doi:10.21105/joss.05450</a>.</li>
+<li><b>PelePhysics: CEPTR Utility and Chemical Jacobian Capability.</b>
+<br>M.&nbsp;Hassanaly, N.&nbsp;T. Wimer, A.&nbsp;Felden, L.&nbsp;Esclapez, J.&nbsp;Ream, M.&nbsp;T. Henry&nbsp;de Frahan, J.&nbsp;Rood, and M.&nbsp;Day.
+Symbolic construction of the chemical <span class="bibtex-protected">Jacobian</span> of quasi-steady state (<span class="bibtex-protected">QSS</span>) chemistries for <span class="bibtex-protected">Exascale</span> computing platforms.
+<em>Combustion and Flame</em>, 270:113740, December 2024.
+<a href="https://doi.org/10.1016/j.combustflame.2024.113740">doi:10.1016/j.combustflame.2024.113740</a>.</li>
+<li><b>PelePhysics: Spray, Soot, and Radiation Modules.</b>
+<br>L.&nbsp;D. Owen, W.&nbsp;Ge, M.&nbsp;Rieth, M.&nbsp;Arienti, L.&nbsp;Esclapez, B.&nbsp;S. Soriano, M.&nbsp;E. Mueller, M.&nbsp;Day, R.&nbsp;Sankaran, and J.&nbsp;H. Chen.
+<span class="bibtex-protected">PeleMP</span>: <span class="bibtex-protected">The</span> <span class="bibtex-protected">Multiphysics</span> <span class="bibtex-protected">Solver</span> for the <span class="bibtex-protected">Combustion</span> <span class="bibtex-protected">Pele</span> <span class="bibtex-protected">Adaptive</span> <span class="bibtex-protected">Mesh</span> <span class="bibtex-protected">Refinement</span> <span class="bibtex-protected">Code</span> <span class="bibtex-protected">Suite</span>.
+<em>Journal of Fluids Engineering</em>, 146(4):041103, April 2024.
+<a href="https://doi.org/10.1115/1.4064494">doi:10.1115/1.4064494</a>.</li>
+<li><b>PelePhysics: Use of SUNDIALS Library for Chemistry Integration.</b>
+<br>C.&nbsp;J. Balos, M.&nbsp;Day, L.&nbsp;Esclapez, A.&nbsp;M. Felden, D.&nbsp;J. Gardner, M.&nbsp;Hassanaly, D.&nbsp;R. Reynolds, J.&nbsp;S. Rood, J.&nbsp;M. Sexton, N.&nbsp;T. Wimer, and C.&nbsp;S. Woodward.
+<span class="bibtex-protected">SUNDIALS</span> time integrators for exascale applications with many independent systems of ordinary differential equations.
+<em>The International Journal of High Performance Computing Applications</em>, 39(1):123–146, January 2025.
+<a href="https://doi.org/10.1177/10943420241280060">doi:10.1177/10943420241280060</a>.</li>
+<li><b>PeleC, PeleLMeX: Use of State Redistribution (from AMReX library).</b>
+<br>A.&nbsp;Giuliani, A.&nbsp;S. Almgren, J.&nbsp;B. Bell, M.&nbsp;J. Berger, M.&nbsp;T. Henry&nbsp;de Frahan, and D.&nbsp;Rangarajan.
+A weighted state redistribution algorithm for embedded boundary grids.
+<em>Journal of Computational Physics</em>, 464:111305, September 2022.
+<a href="https://doi.org/10.1016/j.jcp.2022.111305">doi:10.1016/j.jcp.2022.111305</a>.</li>
+<li><b>PeleC: Use of State Re-Redistribution (from AMReX library).</b>
+<br>I.&nbsp;Barrio&nbsp;Sanchez, A.&nbsp;S. Almgren, J.&nbsp;B. Bell, M.&nbsp;T. Henry&nbsp;de Frahan, and W.&nbsp;Zhang.
+A new re-redistribution scheme for weighted state redistribution with adaptive mesh refinement.
+<em>Journal of Computational Physics</em>, 504:112879, May 2024.
+<a href="https://doi.org/10.1016/j.jcp.2024.112879">doi:10.1016/j.jcp.2024.112879</a>.</li>
+<li><b>PeleLMeX: Manifold-based Combustion Models.</b>
+<br>B.&nbsp;Perry, K.&nbsp;Eiden, M.&nbsp;H.&nbsp;d. Frahan, S.&nbsp;Yellapantula, L.&nbsp;Esclapez, M.&nbsp;Mueller, and M.&nbsp;Day.
+Simulation of a <span class="bibtex-protected">Jet</span> <span class="bibtex-protected">Flame</span> with <span class="bibtex-protected">Inhomogeneous</span> <span class="bibtex-protected">Inlets</span> <span class="bibtex-protected">Using</span> <span class="bibtex-protected">Tabulated</span> and <span class="bibtex-protected">Neural</span> <span class="bibtex-protected">Network</span> <span class="bibtex-protected">Manifold</span> <span class="bibtex-protected">Models</span> (<span class="bibtex-protected">Citation</span> <span class="bibtex-protected">Only</span>).
+<em><span class="bibtex-protected">U.S. National Combustion Meeting</span></em>, 2023.
+URL: <a href="https://research-hub.nlr.gov/en/publications/simulation-of-a-jet-flame-with-inhomogeneous-inlets-using-tabulat/">https://research-hub.nlr.gov/en/publications/simulation-of-a-jet-flame-with-inhomogeneous-inlets-using-tabulat/</a>.</li>
+<li><b>Pele Suite: Exascale Performance.</b>
+<br>N.&nbsp;Malaya, B.&nbsp;Messer, J.&nbsp;Glenski, A.&nbsp;Georgiadou, J.&nbsp;Lietz, K.&nbsp;Gottiparthi, M.&nbsp;Day, J.&nbsp;Chen, J.&nbsp;Rood, L.&nbsp;Esclapez, J.&nbsp;White&nbsp;III, G.&nbsp;R. Jansen, N.&nbsp;Curtis, S.&nbsp;Nichols, J.&nbsp;Kurzak, N.&nbsp;Chalmers, C.&nbsp;Freitag, P.&nbsp;Bauman, A.&nbsp;Fanfarillo, R.&nbsp;D. Budiardja, T.&nbsp;Papatheodore, N.&nbsp;Frontiere, D.&nbsp;Mcdougall, M.&nbsp;Norman, S.&nbsp;Sreepathi, P.&nbsp;Roth, D.&nbsp;Bykov, N.&nbsp;Wolfe, P.&nbsp;Mullowney, M.&nbsp;Eisenbach, M.&nbsp;T. Henry De&nbsp;Frahan, and W.&nbsp;Joubert.
+Experiences readying applications for <span class="bibtex-protected">Exascale</span>.
+In <em>Proceedings of the <span class="bibtex-protected">International</span> <span class="bibtex-protected">Conference</span> for <span class="bibtex-protected">High</span> <span class="bibtex-protected">Performance</span> <span class="bibtex-protected">Computing</span>, <span class="bibtex-protected">Networking</span>, <span class="bibtex-protected">Storage</span> and <span class="bibtex-protected">Analysis</span></em>, <span class="bibtex-protected">SC</span> '23, 1–13. New York, NY, USA, November 2023. Association for Computing Machinery.
+<a href="https://doi.org/10.1145/3581784.3607065">doi:10.1145/3581784.3607065</a>.</li>
+<li><b>PeleC: Detonation Propagation.</b>
+<br>J.&nbsp;W. Gardner, J.&nbsp;Squeo, B.&nbsp;A. Rankin, and A.&nbsp;G. Novoselov.
+Propagation of <span class="bibtex-protected">Detonations</span> <span class="bibtex-protected">Through</span> <span class="bibtex-protected">Composition</span> and <span class="bibtex-protected">Reaction</span> <span class="bibtex-protected">Stratification</span>.
+In <em><span class="bibtex-protected">AIAA</span> <span class="bibtex-protected">SCITECH</span> 2026 <span class="bibtex-protected">Forum</span></em>.
+American Institute of Aeronautics and Astronautics, 2026.
+<a href="https://doi.org/10.2514/6.2026-1235">doi:10.2514/6.2026-1235</a>.</li>
+</ol>
+<!-- EndDevPubs -->
           </section>
 
       	  <section>
             <h4>Publications: Application of the Pele Codes</h4>
 
             This list includes published works where the Pele codes were used to simulate reacting flows or other physical systems. It is meant to give users a sense of the breadth of potential applications of the codes, and potential contacts if interested in simulating something similar to an existing work. The list includes many publications that are not co-authored by the Pele development team; any questions on these publications should be addressed to the relevant authors. To provide corrections or additions to the list, please use <a href="https://github.com/AMReX-Combustion/AMReX-Combustion.github.io/discussions/3">this GitHub discussion</a>.
+            <!-- UsePubs -->
 
-            <ol>
-              <li><b>PeleC: Supersonic Cavity-Stabilized Flame</b><br>
-Sitaraman, Hariswaran, et al. &quot;Visualizations of direct fuel injection
-effects in a supersonic cavity flameholder.&quot;&nbsp;<i>Physical Review
-Fluids</i>&nbsp;6.11 (2021): 110504.<br>
-<a href="https://doi.org/10.1103/PhysRevFluids.6.110504">https://doi.org/10.1103/PhysRevFluids.6.110504</a></li>
-              <li><b>PelePhysics: Hydride vapor phase epitaxy</b><br>
-Hassanaly, Malik, et al. &quot;Surface chemistry models for GaAs epitaxial
-growth and hydride cracking using reacting flow simulations.&quot;&nbsp;<i>Journal
-of Applied Physics</i>&nbsp;130.11 (2021).<br>
-<a href="https://doi.org/10.1063/5.0061222" target="_blank">https://doi.org/10.1063/5.0061222</a></li>
-              <li><b>PeleC, PeleLMeX: Reactivity-Controlled Compression Ignition Engines
-<br>
-</b>Wimer, Nicholas T., et al. &quot;Visualizations of a methane/diesel RCCI
-engine using PeleC and PeleLMeX.&quot;&nbsp;<i>Physical Review Fluids</i>&nbsp;8.11
-(2023): 110511. <a href="https://doi.org/10.1103/PhysRevFluids.8.110511">https://doi.org/10.1103/PhysRevFluids.8.110511</a></li>
-              <li><b>PeleC, PeleLMeX: Reactivity-Controlled Compression Ignition Engines<br>
-</b>Wimer, Nicholas T., et al.&nbsp;<i>Examination of a Methane/Diesel RCCI
-Engine using Pele</i>. No. NREL/CP-2C00-84700. National Renewable Energy
-Lab.(NREL), Golden, CO (United States), 2023. <a
-href="https://www.osti.gov/biblio/1975823">https://www.osti.gov/biblio/1975823</a></li>
-              <li><b>PeleC: Oxycombustion in Supercritical CO2</b><br>
-Henry De Frahan, Marc T., et al. &quot;Simulation of Methane Oxycombustion in
-Supercritical Carbon Dioxide.&quot;&nbsp;<i>Turbo Expo: Power for Land, Sea,
-and Air</i>. Vol. 87073. American Society of Mechanical Engineers, 2023. <a
-href="https://doi.org/10.1115/GT2023-101568" target="_blank">https://doi.org/10.1115/GT2023-101568</a></li>
-              <li><b>PeleLM: FDF-based Simulations<br>
-</b>Aitzhan, Aidyn, et al. &quot;PeleLM-FDF large eddy simulator of turbulent
-reacting flows.&quot;&nbsp;<i>Combustion Theory and Modelling</i>27.1 (2023):
-1-18. <a href="https://doi.org/10.1080/13647830.2022.2142673">https://doi.org/10.1080/13647830.2022.2142673</a></li>
-              <li><b>PeleLMeX: Instabilities in H2/CH4 Flames<br>
-</b>Van, Kyuho, et al. &quot;Quantitative studies of instabilities of confined
-spherically expanding flames: Application to flame propagation of natural gas
-blends with hydrogen at engine-relevant conditions.&quot; (2023). <a
-href="https://www.researchgate.net/publication/375378762">https://www.researchgate.net/publication/375378762</a></li>
-              <li><b>PeleC: Oblique detonation waves</b><br>
-Desai, Swapnil, et al. &quot;Effects of non-thermal termolecular reactions on
-wedge-induced oblique detonation waves.&quot;&nbsp;<i>Combustion and Flame</i>&nbsp;257
-(2023): 112681. <a href="https://doi.org/10.1016/j.combustflame.2023.112681"
-target="_blank" title="Persistent link using digital object identifier">https://doi.org/10.1016/j.combustflame.2023.112681</a></li>
-              <li><b>PeleC: Engine Knock</b><br>
-Morii, Youhi, et al. &quot;Analysis of knock onset based on two-dimensional
-direct numerical simulation and theory of explosive transition of
-deflagration.&quot;&nbsp;<i>Physics of Fluids</i>&nbsp;35.8 (2023). <a
-href="https://doi.org/10.1063/5.0160236" target="_blank">https://doi.org/10.1063/5.0160236</a></li>
-              <li><b>PeleC: Oblique Detonation
-Waves</b><br>
-Ramachandran, Suryanarayan, and Suo Yang. &quot;Micro-jetting and Transverse
-Waves in Oblique Detonations.&quot;&nbsp;<i>Combustion and Flame</i>&nbsp;265
-(2024): 113506. <a href="https://doi.org/10.1016/j.combustflame.2024.113506"
-target="_blank" title="Persistent link using digital object identifier">https://doi.org/10.1016/j.combustflame.2024.113506</a></li>
-              <li><b>PeleC: Deflagration to
-Detonation Transition</b><br>
-Ramachandran, Suryanarayan, et al. &quot;A numerical investigation of
-deflagration propagation and transition to detonation in a microchannel with
-detailed chemistry: Effects of thermal boundary conditions and
-vitiation.&quot;&nbsp;<i>Physics of Fluids</i>35.7 (2023). <a
-href="https://doi.org/10.1063/5.0155645" target="_blank">https://doi.org/10.1063/5.0155645</a></li>
-              <li><b>PeleC: Supercritical Cool
-Flames</b> <br>
-Ramachandran, Suryanarayan, et al. &quot;Numerical study of turbulent
-non-premixed cool flames at high and supercritical pressures: Real gas effects
-and dual peak structure.&quot;&nbsp;<i>Combustion and Flame</i>&nbsp;249
-(2023): 112626. <a href="https://doi.org/10.1016/j.combustflame.2023.112626"
-target="_blank" title="Persistent link using digital object identifier">https://doi.org/10.1016/j.combustflame.2023.112626</a></li>
-              <li><b>PeleLMeX: Sustainable
-Aviation Fuel</b> <br>
-Nadakkal Appukuttan, Sreejith, et al.&nbsp;<i>Simulations of fuel-air mixing in
-a 7 element lean direct injection (LDI) aviation combustor</i>. No.
-NREL/CP-2C00-85119. National Renewable Energy Laboratory (NREL), Golden, CO
-(United States), 2023. <a href="https://www.osti.gov/biblio/1995457">https://www.osti.gov/biblio/1995457</a></li>
-              <li><b>PeleLMeX: Lean H2
-Combustion</b><br>
-Howarth, Thomas L., et al. &quot;Thermal diffusion, exhaust gas recirculation and
-blending effects on lean premixed hydrogen flames.&quot;&nbsp;<i>Proceedings of
-the Combustion Institute</i>&nbsp;40.1-4 (2024): 105429. <a
-href="https://doi.org/10.1016/j.proci.2024.105429" target="_blank"
-title="Persistent link using digital object identifier">https://doi.org/10.1016/j.proci.2024.105429</a></li>
-              <li><b>PeleLMeX: H2 Micromix
-Combustor DNS</b> <br>
-Howarth, Thomas L., et al. &quot;Direct numerical simulation of a high-pressure
-hydrogen micromix combustor: Flame structure and stabilisation
-mechanism.&quot;&nbsp;<i>Combustion and Flame</i>&nbsp;265 (2024): 113504. <a
-href="https://doi.org/10.1016/j.combustflame.2024.113504" target="_blank"
-title="Persistent link using digital object identifier">https://doi.org/10.1016/j.combustflame.2024.113504</a></li>
-              <li><b>PeleLMeX: Pool Fires<br>
-</b>Meehan, Michael A., John C. Hewson, and Peter E. Hamlington. &quot;High
-resolution numerical simulations of methane pool fires using adaptive mesh
-refinement.&quot;&nbsp;<i>Proceedings of the Combustion Institute</i>&nbsp;40.1-4
-(2024): 105768. <a href="https://doi.org/10.1016/j.proci.2024.105768">https://doi.org/10.1016/j.proci.2024.105768</a></li>
-              <li><b>PeleLMeX: Gas Turbine
-Flame Stabilization</b><br>
-Vabre, M., et al. &quot;DNS of ignition and flame stabilization in a simplified
-gas turbine premixer.&quot;&nbsp;<i>Proceedings of the Combustion Institute</i>&nbsp;40.1-4
-(2024): 105701. <a href="https://doi.org/10.1016/j.proci.2024.105701"
-target="_blank" title="Persistent link using digital object identifier">https://doi.org/10.1016/j.proci.2024.105701</a></li>
-              <li><b>PeleLMeX: Sustainable
-Aviation Fuel</b><br>
-Rieth, Martin, et al. &quot;Numerical and experimental investigation of single
-and multi-injection ignition of F-24/ATJ blends.&quot;&nbsp;<i>Proceedings of
-the Combustion Institute</i>&nbsp;40.1-4 (2024): 105341. <a
-href="https://doi.org/10.1016/j.proci.2024.105341" target="_blank"
-title="Persistent link using digital object identifier">https://doi.org/10.1016/j.proci.2024.105341</a></li>
-              <li><b>PeleLMeX: Turbulent
-premixed flame DNS<br>
-</b>Zheng, Jian, et al. &quot;DNS of laboratory-scale turbulent premixed
-counterflow flames under elevated gravity conditions.&quot;&nbsp;<i>Physics of
-Fluids</i>&nbsp;36.10 (2024). <a href="https://doi.org/10.1063/5.0223680"
-target="_blank">https://doi.org/10.1063/5.0223680</a></li>
-              <li><b>PeleLMeX: H2/NH3 Flames</b><br>
-Hardaya, Adi P., et al. &quot;Heat release surrogates for NH3/H2/N2–air
-premixed flames.&quot;&nbsp;<i>Proceedings of the Combustion Institute</i>&nbsp;40.1-4
-(2024): 105432. <a href="https://doi.org/10.1016/j.proci.2024.105432">https://doi.org/10.1016/j.proci.2024.105432</a></li>
-              <li><b>PeleLMeX: NH3
-Rich-Quench-Lean Combustion DNS<br>
-</b>Rieth, Martin, et al. &quot;Direct numerical simulation of low-emission
-ammonia rich-quench-lean combustion.&quot;&nbsp;<i>Proceedings of the
-Combustion Institute</i>&nbsp;40.1-4 (2024): 105558. <a
-href="https://doi.org/10.1016/j.proci.2024.105558" target="_blank"
-title="Persistent link using digital object identifier">https://doi.org/10.1016/j.proci.2024.105558</a></li>
-              <li><b>PeleC: H2 Detonations</b><br>
-Salinas, Jorge S., et al. &quot;Non-thermal termolecular reactions effects on
-hydrogen-air planar detonation.&quot;&nbsp;<i>AIAA SCITECH 2024 Forum</i>.
-2024. <a href="https://doi.org/10.2514/6.2024-2783">https://doi.org/10.2514/6.2024-2783</a></li>
-              <li><b>PeleC: Shock
-Wave-Boundary Layer Interactions<br>
-</b>Kimmel, Elliot, et al. &quot;Evaluation of Shock Wave-Boundary Layer
-Interaction Modeling Capabilities for Use in a Hypersonic Aerothermoelastic
-Framework.&quot;&nbsp;<i>AIAA SCITECH 2024 Forum</i>. 2024. <a
-href="https://doi.org/10.2514/6.2024-2735">https://doi.org/10.2514/6.2024-2735</a></li>
-              <li><b>PeleC: Rotating
-Detonation Engines</b><br>
-Valencia, Sebastian, et al. &quot;Flow-field analysis and performance
-assessment of rotating detonation engines under different number of discrete
-inlet nozzles.&quot; Applications in Energy and Combustion Science 20 (2024):
-100296. <a href="https://doi.org/10.1016/j.jaecs.2024.100296" target="_blank"
-title="Persistent link using digital object identifier">https://doi.org/10.1016/j.jaecs.2024.100296</a></li>
-              <li><b>PeleC: Engine Knock </b><br>
-Yang, Linlin, et al. &quot;Effect of temperature disturbance on end-gas
-autoignition and detonation development.&quot;&nbsp;<i>Proceedings of the
-Combustion Institute</i>&nbsp;40.1-4 (2024): 105220. <a
-href="https://doi.org/10.1016/j.proci.2024.105220" target="_blank"
-title="Persistent link using digital object identifier">https://doi.org/10.1016/j.proci.2024.105220</a></li>
-              <li><b>PeleC: Detonation
-Propagation</b><br>
-Jun, Daeyoung, Dohwan Kwon, and Bok Jik Lee. &quot;Numerical study on the
-reinitiation mechanism of detonation propagating through double slits in a
-planar channel.&quot;&nbsp;<i>Combustion and Flame</i>&nbsp;261 (2024): 113271.
-<a href="https://www.sciencedirect.com/science/article/pii/S0010218023006454">https://www.sciencedirect.com/science/article/pii/S0010218023006454</a></li>
-              <li><b>PeleC: Oblique Detonation
-Waves</b><br>
-Ramachandran, Suryanarayan, and Suo Yang. &quot;Microscopic hypersonic jetting
-in oblique detonation waves.&quot; AIAA SCITECH 2024 Forum. 2024. <a
-href="https://doi.org/10.2514/6.2024-2781">https://doi.org/10.2514/6.2024-2781</a></li>
-              <li><b>PeleC: Supersonic Flow
-Choking</b><br>
-Jin, Kaiyan, et al. &quot;Numerical investigation on flow choking induced by
-local heat release and large-scale flow separation in a supersonic
-combustor.&quot;&nbsp;<i>Combustion and Flame</i>&nbsp;268 (2024): 113627. <a
-href="https://doi.org/10.1016/j.combustflame.2024.113627" target="_blank"
-title="Persistent link using digital object identifier">https://doi.org/10.1016/j.combustflame.2024.113627</a></li>
-              <li><b>PeleC:
-Deflagration-to-Detonation Transition</b><br>
-Cai, Xiaodong, et al. &quot;Deflagration-to-detonation transition and
-detonation propagation in supersonic flows with hydrogen injection and
-downstream ignition.&quot;&nbsp;<i>Physics of Fluids</i>&nbsp;36.10 (2024) <a
-href="https://doi.org/10.1063/5.0228960">https://doi.org/10.1063/5.0228960</a></li>
-              <li><b>PelePhysics: Stochastic
-Fields Turbulent Combustion Modeling<br>
-</b>Un, Tin-Hang, and Salvador Navarro-Martinez. &quot;Stochastic fields with
-adaptive mesh refinement for high-speed turbulent combustion.&quot;&nbsp;<i>Combustion
-and Flame</i>&nbsp;272 (2025): 113897. <a
-href="https://doi.org/10.1016/j.combustflame.2024.113897">https://doi.org/10.1016/j.combustflame.2024.113897</a>
-</li>
-              <li><b>PeleLMeX: Instabilities in H2/NH3 Flames</b><br>
-  Lehmann, Terence, et al. &quot;Comprehensive linear stability analysis for intrinsic instabilities in premixed ammonia/hydrogen/air flames.
-  &quot;&nbsp;<i>Combustion and Flame</i>&nbsp;273 (2025): 113927. <a href="https://doi.org/10.1016/j.combustflame.2024.113927">https://doi.org/10.1016/j.combustflame.2024.113927</a></li>
-              <li><b>PeleC: High-speed Fluid-structure Interaction<br>
-</b>Kimmel, Elliot, et al. &quot;Reduced-Order Modeling of Resolved Turbulent
-Flows for High-Speed Fluid-Structure Interaction Analysis.&quot;&nbsp;<i>AIAA
-SCITECH 2025 Forum</i>. 2025.<br>
-                <a href="https://doi.org/10.2514/6.2025-1134">https://doi.org/10.2514/6.2025-1134</a></li>
-              <li><b>PeleC</b></span><b>: Channel Detonation<br>
-</b>Suryanarayan, Ramachandran, Rudram Dushe, and Suo Yang. &quot;Comparing
-shock-attached and lab frames of reference for numerical simulations of
-two-dimensional channel detonations.&quot;&nbsp;<i>AIAA SCITECH 2025 Forum</i>.
-2025.<br>
-<a href="https://doi.org/10.2514/6.2025-1386">https://doi.org/10.2514/6.2025-1386</a></li>
-              <li><b>PeleC</b></span><b>: H2/Air Detonation</b><br>
-Suryanarayan, Ramachandran, and Suo Yang. &quot;Three-Dimensional Micro-Jetting
-Dynamics in a Stoichiometric H2/Air Detonation.&quot;&nbsp;<i>AIAA SCITECH 2025
-Forum</i>. 2025.<br>
-<a href="https://doi.org/10.2514/6.2025-1966">https://doi.org/10.2514/6.2025-1966</a></li>
-              <li><b>PeleC</b></span><b>: Channel Detonations</b><br>
-Suryanarayan, Ramachandran, et al. &quot;Micro-jetting Dynamics in Channel
-Detonations of High-Activation Energy Mixtures.&quot;&nbsp;<i>AIAA SCITECH 2025
-Forum</i>. 2025.<br>
-<a href="https://doi.org/10.2514/6.2025-1585">https://doi.org/10.2514/6.2025-1585</a></li>
-              <li><b>PeleLMeX:</b>
-<b>Soot formation for SATF<br>
-</b>S. Soriano, Bruno, and Jackie Chen. &quot;High Fidelity Simulation of the
-Soot Formation in a Lab-Scale Combustor Using Sustainable Aviation
-Fuel.&quot;&nbsp;<i>AIAA SCITECH 2025 Forum</i>. 2025.<b><br>
-</b><a href="https://doi.org/10.2514/6.2025-2090">https://doi.org/10.2514/6.2025-2090</a></li>
-              <li><b>PeleC</b></span><b>: Chemical Kinetics in H2 and CH4 flames<br>
-</b>Qian, <span class=SpellE>Chengeng</span>, and Mikhail A. Liberman.
-&quot;Influence of Chemical Kinetics on Tulip Flame Formation in Highly
-Reactive (H2/Air) and Low Reactive (CH4/Air) Mixtures.&quot;&nbsp;<i>Energies</i>&nbsp;18.4
-(2025): 885.<br>
-<a href="https://doi.org/10.3390/en18040885">https://doi.org/10.3390/en18040885</a></li>
-              <li><b>PeleC</b></span><b>: Ammonia Combustion DNS<br>
-</b>Huang, <span class=SpellE>Ziwei</span>, et al. &quot;Combustion
-Characteristics of Liquid Ammonia Direct Injection Under High-Pressure
-Conditions Using DNS.&quot;&nbsp;<i>Energies</i>&nbsp;18.9 (2025): 2228.<br>
-<a href="https://doi.org/10.3390/en18092228">https://doi.org/10.3390/en18092228</a></li>
-              <li><b>PeleC</b></span><b>: Spray Jet in Crossflow <br>
-</b>Meng, Qian, et al. &quot;Direct numerical simulation studies of spray jet
-flames in hot vitiated crossflow.&quot;&nbsp;<i>Fuel</i>&nbsp;389 (2025):
-134543.<b><br>
-</b><a href="https://doi.org/10.1016/j.fuel.2025.134543" target="_blank"
-title="Persistent link using digital object identifier">https://doi.org/10.1016/j.fuel.2025.134543</a></li>
-              <li><b>PeleC</b></span><b>: Turbulent mixing of H2 jets<br>
-</b><span class=SpellE>Duronio</span>, Francesco, and Andrea Di Mascio.
-&quot;Turbulent mixing dynamics of under-expanded hydrogen jets in propulsion
-systems.&quot;&nbsp;<i>Physics of Fluids</i>&nbsp;37.8 (2025).<br>
-<a href="https://doi.org/10.1063/5.0277887" target="_blank">https://doi.org/10.1063/5.0277887</a></li>
-              <li><b>PeleLMeX:
-H2 <span class=SpellE>Micromix</span> Combustor</b> <b><br>
-</b>Li, Zisen, et al. &quot;NOx production in a canonical <span class=SpellE>Micromix</span>
-hydrogen flame.&quot; <i>Proceedings of the Combustion Institute</i>&nbsp;41
-(2025): 105793.<b> </b><br>
-<a href="https://doi.org/10.1016/j.proci.2025.105793" target="_blank"
-title="Persistent link using digital object identifier">https://doi.org/10.1016/j.proci.2025.105793</a></li>
-              <li><b>PeleLM</b></span><b>, <span class=SpellE>PeleC</span>: Dual
-fuel engines</b> <br>
-Salinas, Jorge S., et al. &quot;In situ multi-tier auto-ignition detection
-applied to dual-fuel combustion simulations.&quot;&nbsp;<i>Combustion and Flame</i>&nbsp;279
-(2025): 114273.<br>
-<a href="https://doi.org/10.1016/j.combustflame.2025.114273">https://doi.org/10.1016/j.combustflame.2025.114273</a></li>
-              <li><b>PeleLMeX:
-H2 Laminar Flames </b><br>
-Pandey, Mayank, Krishnakant Agrawal, and Anjan Ray. &quot;Numerical studies on
-intrinsically unstable H2/CO2 flames: Effect of CO2 dilution, equivalence
-ratio, temperature and pressure.&quot;&nbsp;<i>Combustion and Flame</i>&nbsp;279
-(2025): 114307.<br>
-<a href="https://doi.org/10.1016/j.combustflame.2025.114307">https://doi.org/10.1016/j.combustflame.2025.114307</a></li>
-              <li><b>PeleC</b></span><b>: Deflagration to Detonation Transition</b> <br>
-Valencia, Sebastian, et al. &quot;Influence of Obstacle Separation Distance on
-the Acceleration of Premixed Methane/Air Flames in a Closed Channel.&quot;&nbsp;<i>Flow,
-Turbulence and <span class=GramE>Combustion<span style='font-style:normal'>(</span></span></i>2025):
-1-25.<br>
-<a href="https://doi.org/10.1007/s10494-025-00691-2">https://doi.org/10.1007/s10494-025-00691-2</a></li>
-            </ol>
+<ol>
+<li><b>PelePhysics: Kinetic modeling of solar cell processing.</b>
+<br>M.&nbsp;Hassanaly, H.&nbsp;Sitaraman, K.&nbsp;L. Schulte, A.&nbsp;J. Ptak, J.&nbsp;Simon, K.&nbsp;Udwary, J.&nbsp;H. Leach, and H.&nbsp;Splawn.
+Surface chemistry models for <span class="bibtex-protected">GaAs</span> epitaxial growth and hydride cracking using reacting flow simulations.
+<em>Journal of Applied Physics</em>, 130(11):115702, September 2021.
+<a href="https://doi.org/10.1063/5.0061222">doi:10.1063/5.0061222</a>.</li>
+<li><b>PeleC: Supersonic Cavity-Stabilized Flame.</b>
+<br>H.&nbsp;Sitaraman, N.&nbsp;Brunhart-Lupo, M.&nbsp;Henry&nbsp;de Frahan, S.&nbsp;Yellapantula, B.&nbsp;Perry, J.&nbsp;Rood, R.&nbsp;Grout, M.&nbsp;Day, R.&nbsp;Binyahib, and K.&nbsp;Gruchalla.
+Visualizations of direct fuel injection effects in a supersonic cavity flameholder.
+<em>Physical Review Fluids</em>, 6(11):110504, November 2021.
+<a href="https://doi.org/10.1103/PhysRevFluids.6.110504">doi:10.1103/PhysRevFluids.6.110504</a>.</li>
+<li><b>PeleLM: FDF-based simulations.</b>
+<br>A.&nbsp;Aitzhan, S.&nbsp;Sammak, P.&nbsp;Givi, and A.&nbsp;G. Nouri.
+<span class="bibtex-protected">PeleLM</span>-<span class="bibtex-protected">FDF</span> large eddy simulator of turbulent reacting flows.
+<em>Combustion Theory and Modelling</em>, 27(1):1–18, January 2023.
+_eprint: https://doi.org/10.1080/13647830.2022.2142673.
+<a href="https://doi.org/10.1080/13647830.2022.2142673">doi:10.1080/13647830.2022.2142673</a>.</li>
+<li><b>PeleLMeX: Synthetic Aviation Turbine Fuel evaporation.</b>
+<br>S.&nbsp;Nadakkal&nbsp;Appukuttan, B.&nbsp;Perry, S.&nbsp;Yellapantula, L.&nbsp;Esclapez, H.&nbsp;Sitaraman, and M.&nbsp;Day.
+Simulations of <span class="bibtex-protected">Fuel</span>-<span class="bibtex-protected">Air</span> <span class="bibtex-protected">Mixing</span> in a 7 <span class="bibtex-protected">Element</span> <span class="bibtex-protected">Lean</span> <span class="bibtex-protected">Direct</span> <span class="bibtex-protected">Injection</span> (<span class="bibtex-protected">LDI</span>) <span class="bibtex-protected">Aviation</span> <span class="bibtex-protected">Combustor</span>: <span class="bibtex-protected">Preprint</span>.
+Technical Report NREL/CP-2C00-85119, National Laboratory of the Rockies, August 2023.
+URL: <a href="https://www.osti.gov/biblio/1995457">https://www.osti.gov/biblio/1995457</a>.</li>
+<li><b>PeleC: Oblique detonation waves.</b>
+<br>S.&nbsp;Desai, Y.&nbsp;Tao, R.&nbsp;Sivaramakrishnan, and J.&nbsp;H. Chen.
+Effects of non-thermal termolecular reactions on wedge-induced oblique detonation waves.
+<em>Combustion and Flame</em>, 257:112681, November 2023.
+<a href="https://doi.org/10.1016/j.combustflame.2023.112681">doi:10.1016/j.combustflame.2023.112681</a>.</li>
+<li><b>PeleC: Oxycombustion in supercritical CO2.</b>
+<br>M.&nbsp;T. Henry De&nbsp;Frahan, M.&nbsp;J. Rahimi, O.&nbsp;Doronina, B.&nbsp;A. Perry, S.&nbsp;Yellapantula, I.&nbsp;Cormier, M.&nbsp;Day, and M.&nbsp;J. Martin.
+Simulation of <span class="bibtex-protected">Methane</span> <span class="bibtex-protected">Oxycombustion</span> in <span class="bibtex-protected">Supercritical</span> <span class="bibtex-protected">Carbon</span> <span class="bibtex-protected">Dioxide</span>.
+In <em>Volume 12: <span class="bibtex-protected">Supercritical</span> <span class="bibtex-protected">CO2</span></em>, V012T28A004. Boston, Massachusetts, USA, June 2023. American Society of Mechanical Engineers.
+<a href="https://doi.org/10.1115/GT2023-101568">doi:10.1115/GT2023-101568</a>.</li>
+<li><b>PeleC: Engine knock.</b>
+<br>Y.&nbsp;Morii, A.&nbsp;Tsunoda, A.&nbsp;K. Dubey, and K.&nbsp;Maruta.
+Analysis of knock onset based on two-dimensional direct numerical simulation and theory of explosive transition of deflagration.
+<em>Physics of Fluids</em>, 35(8):083604, August 2023.
+<a href="https://doi.org/10.1063/5.0160236">doi:10.1063/5.0160236</a>.</li>
+<li><b>PeleC: Deflagration to Detonation Transition.</b>
+<br>S.&nbsp;Ramachandran, N.&nbsp;Srinivasan, Z.&nbsp;Wang, A.&nbsp;Behkish, and S.&nbsp;Yang.
+A numerical investigation of deflagration propagation and transition to detonation in a microchannel with detailed chemistry: <span class="bibtex-protected">Effects</span> of thermal boundary conditions and vitiation.
+<em>Physics of Fluids</em>, 35(7):076104, July 2023.
+<a href="https://doi.org/10.1063/5.0155645">doi:10.1063/5.0155645</a>.</li>
+<li><b>PeleC: Supercritical cool flames.</b>
+<br>S.&nbsp;Ramachandran, N.&nbsp;Srinivasan, T.&nbsp;S. Taneja, H.&nbsp;Zhang, and S.&nbsp;Yang.
+Numerical study of turbulent non-premixed cool flames at high and supercritical pressures: <span class="bibtex-protected">Real</span> gas effects and dual peak structure.
+<em>Combustion and Flame</em>, 249:112626, March 2023.
+<a href="https://doi.org/10.1016/j.combustflame.2023.112626">doi:10.1016/j.combustflame.2023.112626</a>.</li>
+<li><b>PeleLMeX: Instabilities in H2/CH4 flames.</b>
+<br>K.&nbsp;H. Van, A.&nbsp;Hu, J.&nbsp;Fang, T.&nbsp;Bera, A.&nbsp;Aradi, and F.&nbsp;Egolfopoulos.
+Quantitative studies of instabilities of confined spherically expanding flames: <span class="bibtex-protected">Application</span> to flame propagation of natural gas blends with hydrogen at engine-relevant conditions.
+<em>Western States Section of the Combustion Institute Technical Meeting</em>, October 2023.</li>
+<li><b>PeleC: Bluff body flame vorticity dynamics.</b>
+<br>S.&nbsp;H.R. Whitman, T.&nbsp;J. Souders, M.&nbsp;A. Meehan, J.&nbsp;G. Brasseur, and P.&nbsp;E. Hamlington.
+Pressure gradient tailoring effects on vorticity dynamics in the near-wake of bluff-body premixed flames.
+<em>Proceedings of the Combustion Institute</em>, 39(2):2359–2368, 2023.
+<a href="https://doi.org/10.1016/j.proci.2022.09.064">doi:10.1016/j.proci.2022.09.064</a>.</li>
+<li><b>PeleC, PeleLMeX: Reactivity-Controlled Compression Ignition Engines.</b>
+<br>N.&nbsp;T. Wimer, L.&nbsp;Esclapez, M.&nbsp;Henry&nbsp;de Frahan, M.&nbsp;Rahimi, M.&nbsp;Hassanaly, B.&nbsp;Perry, J.&nbsp;Rood, S.&nbsp;Yellapantula, H.&nbsp;Sitaraman, M.&nbsp;Martin, O.&nbsp;Doronina, S.&nbsp;N. Appukuttan, M.&nbsp;Rieth, and M.&nbsp;Day.
+Examination of a <span class="bibtex-protected">Methane</span>/<span class="bibtex-protected">Diesel</span> <span class="bibtex-protected">RCCI</span> <span class="bibtex-protected">Engine</span> <span class="bibtex-protected">Using</span> <span class="bibtex-protected">Pele</span>: <span class="bibtex-protected">Preprint</span>.
+Technical Report NREL/CP-2C00-84700, National Laboratory of the Rockies, Sandia National Laboratories, May 2023.
+URL: <a href="https://www.osti.gov/biblio/1975823">https://www.osti.gov/biblio/1975823</a>.</li>
+<li><b>PeleC, PeleLMeX: Reactivity-Controlled Compression Ignition Engines.</b>
+<br>N.&nbsp;T. Wimer, L.&nbsp;Esclapez, N.&nbsp;Brunhart-Lupo, M.&nbsp;H. De&nbsp;Frahan, M.&nbsp;Rahimi, M.&nbsp;Hassanaly, J.&nbsp;Rood, S.&nbsp;Yellapantula, H.&nbsp;Sitaraman, B.&nbsp;Perry, M.&nbsp;Martin, O.&nbsp;Doronina, S.&nbsp;N. Appukuttan, M.&nbsp;Rieth, and M.&nbsp;Day.
+Visualizations of a methane/diesel <span class="bibtex-protected">RCCI</span> engine using <span class="bibtex-protected">PeleC</span> and <span class="bibtex-protected">PeleLMeX</span>.
+<em>Physical Review Fluids</em>, 8(11):110511, November 2023.
+<a href="https://doi.org/10.1103/PhysRevFluids.8.110511">doi:10.1103/PhysRevFluids.8.110511</a>.</li>
+<li><b>PeleC: Deflagration-to-detonation transition.</b>
+<br>X.&nbsp;Cai, X.&nbsp;Wang, H.&nbsp;Liu, R.&nbsp;Hong, and H.&nbsp;He.
+Deflagration-to-detonation transition and detonation propagation in supersonic flows with hydrogen injection and downstream ignition.
+<em>Physics of Fluids</em>, 36(10):106119, October 2024.
+<a href="https://doi.org/10.1063/5.0228960">doi:10.1063/5.0228960</a>.</li>
+<li><b>PeleLMeX: Microgravity Electric Field Flames.</b>
+<br>M.&nbsp;Donzeau, L.&nbsp;Esclapez, M.&nbsp;Day, and Y.-C. Chien.
+Recent <span class="bibtex-protected">Progress</span> on <span class="bibtex-protected">Numerical</span> <span class="bibtex-protected">Modeling</span> for <span class="bibtex-protected">Microgravity</span> <span class="bibtex-protected">Electric</span> <span class="bibtex-protected">Field</span> <span class="bibtex-protected">Flames</span>: <span class="bibtex-protected">Preprint</span>.
+Technical Report NREL/CP-2C00-85822, Ecole Nationale Superieure de Mécanique et d'Aerotechnique, National Laboratory of the Rockies, University of California Irvine, April 2024.
+URL: <a href="https://www.osti.gov/biblio/2339551">https://www.osti.gov/biblio/2339551</a>.</li>
+<li><b>PeleLMeX: Ammonia/hydrogen flames.</b>
+<br>A.&nbsp;P. Hardaya, W.&nbsp;D. Kulatilaka, B.&nbsp;S.&nbsp;Soriano, and J.&nbsp;H. Chen.
+Heat release surrogates for <span class="bibtex-protected">NH3</span>/<span class="bibtex-protected">H2</span>/<span class="bibtex-protected">N2</span>–air premixed flames.
+<em>Proceedings of the Combustion Institute</em>, 40(1-4):105432, 2024.
+<a href="https://doi.org/10.1016/j.proci.2024.105432">doi:10.1016/j.proci.2024.105432</a>.</li>
+<li><b>PeleLMeX: H2 Micromix combustor.</b>
+<br>T.L. Howarth, M.A. Picciani, E.S. Richardson, M.S. Day, and A.J. Aspden.
+Direct numerical simulation of a high-pressure hydrogen micromix combustor: <span class="bibtex-protected">Flame</span> structure and stabilisation mechanism.
+<em>Combustion and Flame</em>, 265:113504, July 2024.
+<a href="https://doi.org/10.1016/j.combustflame.2024.113504">doi:10.1016/j.combustflame.2024.113504</a>.</li>
+<li><b>PeleLMeX: EGR Effects on Lean H2 Combustion.</b>
+<br>T.L. Howarth, M.S. Day, H.&nbsp;Pitsch, and A.J. Aspden.
+Thermal diffusion, exhaust gas recirculation and blending effects on lean premixed hydrogen flames.
+<em>Proceedings of the Combustion Institute</em>, 40(1-4):105429, 2024.
+<a href="https://doi.org/10.1016/j.proci.2024.105429">doi:10.1016/j.proci.2024.105429</a>.</li>
+<li><b>PeleC: Supersonic Combustion.</b>
+<br>K.&nbsp;Jin, X.&nbsp;Cai, R.&nbsp;Hong, L.&nbsp;Zhang, and J.&nbsp;Liang.
+Numerical investigation on flow choking induced by local heat release and large-scale flow separation in a supersonic combustor.
+<em>Combustion and Flame</em>, 268:113627, October 2024.
+<a href="https://doi.org/10.1016/j.combustflame.2024.113627">doi:10.1016/j.combustflame.2024.113627</a>.</li>
+<li><b>PeleC: Detonation propagation.</b>
+<br>D.&nbsp;Jun, D.&nbsp;Kwon, and B.&nbsp;J. Lee.
+Numerical study on the reinitiation mechanism of detonation propagating through double slits in a planar channel.
+<em>Combustion and Flame</em>, 261:113271, March 2024.
+<a href="https://doi.org/10.1016/j.combustflame.2023.113271">doi:10.1016/j.combustflame.2023.113271</a>.</li>
+<li><b>PeleLMeX: CH4 pool fires.</b>
+<br>M.&nbsp;A. Meehan, J.&nbsp;C. Hewson, and P.&nbsp;E. Hamlington.
+High resolution numerical simulations of methane pool fires using adaptive mesh refinement.
+<em>Proceedings of the Combustion Institute</em>, 40(1-4):105768, 2024.
+<a href="https://doi.org/10.1016/j.proci.2024.105768">doi:10.1016/j.proci.2024.105768</a>.</li>
+<li><b>PeleC: Oblique Detonation Waves.</b>
+<br>S.&nbsp;Ramachandran and S.&nbsp;Yang.
+Micro-jetting and <span class="bibtex-protected">Transverse</span> <span class="bibtex-protected">Waves</span> in <span class="bibtex-protected">Oblique</span> <span class="bibtex-protected">Detonations</span>.
+<em>Combustion and Flame</em>, 265:113506, July 2024.
+<a href="https://doi.org/10.1016/j.combustflame.2024.113506">doi:10.1016/j.combustflame.2024.113506</a>.</li>
+<li><b>PeleLMeX: Ammonia RQL combustion.</b>
+<br>M.&nbsp;Rieth, A.&nbsp;Gruber, E.&nbsp;R. Hawkes, and J.&nbsp;H. Chen.
+Direct numerical simulation of low-emission ammonia rich-quench-lean combustion.
+<em>Proceedings of the Combustion Institute</em>, 40(1-4):105558, 2024.
+<a href="https://doi.org/10.1016/j.proci.2024.105558">doi:10.1016/j.proci.2024.105558</a>.</li>
+<li><b>PeleLMeX: Synthetic aviation turbine fuel ignition.</b>
+<br>M.&nbsp;Rieth, J.&nbsp;Kim, E.&nbsp;Mayhew, J.&nbsp;Temme, C.-B. Kweon, P.&nbsp;Wiersema, T.&nbsp;Lee, and J.&nbsp;H. Chen.
+Numerical and experimental investigation of single and multi-injection ignition of <span class="bibtex-protected">F</span>-24/<span class="bibtex-protected">ATJ</span> blends.
+<em>Proceedings of the Combustion Institute</em>, 40(1-4):105341, 2024.
+<a href="https://doi.org/10.1016/j.proci.2024.105341">doi:10.1016/j.proci.2024.105341</a>.</li>
+<li><b>PeleC: H2/air detonations.</b>
+<br>J.&nbsp;S. Salinas, A.&nbsp;Baranwal, J.&nbsp;Chen, S.&nbsp;Desai, Y.&nbsp;Tao, and A.&nbsp;Poludnenko.
+Non-thermal termolecular reactions effects on hydrogen-air planar detonation.
+In <em>AIAA SCITECH 2024 Forum</em>, 2783. 2024.</li>
+<li><b>PeleLMeX: Gas turbine flame stabilization.</b>
+<br>M.&nbsp;Vabre, Z.&nbsp;Li, S.&nbsp;Jella, P.&nbsp;Versailles, G.&nbsp;Bourque, M.&nbsp;Day, and B.&nbsp;Savard.
+<span class="bibtex-protected">DNS</span> of ignition and flame stabilization in a simplified gas turbine premixer.
+<em>Proceedings of the Combustion Institute</em>, 40(1-4):105701, 2024.
+<a href="https://doi.org/10.1016/j.proci.2024.105701">doi:10.1016/j.proci.2024.105701</a>.</li>
+<li><b>PeleC: Rotating detonation engine inlet nozzles.</b>
+<br>S.&nbsp;Valencia, A.&nbsp;Mendiburu, L.&nbsp;Bravo, P.&nbsp;Khare, and C.&nbsp;Celis.
+Flow-field analysis and performance assessment of rotating detonation engines under different number of discrete inlet nozzles.
+<em>Applications in Energy and Combustion Science</em>, 20:100296, December 2024.
+<a href="https://doi.org/10.1016/j.jaecs.2024.100296">doi:10.1016/j.jaecs.2024.100296</a>.</li>
+<li><b>PeleC: Engine Knock.</b>
+<br>L.&nbsp;Yang, Y.&nbsp;Wang, P.&nbsp;Dai, and Z.&nbsp;Chen.
+Effect of temperature disturbance on end-gas autoignition and detonation development.
+<em>Proceedings of the Combustion Institute</em>, 40(1-4):105220, 2024.
+<a href="https://doi.org/10.1016/j.proci.2024.105220">doi:10.1016/j.proci.2024.105220</a>.</li>
+<li><b>PeleLMeX: Counterflow flames in elevated gravity.</b>
+<br>J.&nbsp;Zheng, H.&nbsp;Wang, K.&nbsp;Luo, and J.&nbsp;Fan.
+<span class="bibtex-protected">DNS</span> of laboratory-scale turbulent premixed counterflow flames under elevated gravity conditions.
+<em>Physics of Fluids</em>, 36(10):105147, October 2024.
+<a href="https://doi.org/10.1063/5.0223680">doi:10.1063/5.0223680</a>.</li>
+<li><b>PeleLMeX: Thermodiffusive instability in H2 flames.</b>
+<br>J.&nbsp;Bae, O.&nbsp;Chaib, L.&nbsp;Weller, A.&nbsp;Moitro, E.F. Hunt, A.J. Aspden, and S.&nbsp;Hochgreb.
+Simultaneous imaging of <span class="bibtex-protected">OH</span> and temperature in lean premixed hydrogen/air flames: <span class="bibtex-protected">Which</span> marker for thermodiffusive instability?
+<em>Proceedings of the Combustion Institute</em>, 41:105919, 2025.
+<a href="https://doi.org/10.1016/j.proci.2025.105919">doi:10.1016/j.proci.2025.105919</a>.</li>
+<li><b>PeleC: Turbulent mixing of H2 jets.</b>
+<br>F.&nbsp;Duronio and A.&nbsp;Di&nbsp;Mascio.
+Turbulent mixing dynamics of under-expanded hydrogen jets in propulsion systems.
+<em>Physics of Fluids</em>, 37(8):086158, August 2025.
+<a href="https://doi.org/10.1063/5.0277887">doi:10.1063/5.0277887</a>.</li>
+<li><b>PeleLMeX: Laminar H2 flames at elevated pressure.</b>
+<br>T.&nbsp;L. Howarth, T.&nbsp;Lehmann, M.&nbsp;Gauding, and H.&nbsp;Pitsch.
+Role of enthalpy transport in laminar premixed hydrogen flames at atmospheric and elevated pressures.
+April 2025.
+arXiv:2503.19865 [physics].
+<a href="https://doi.org/10.48550/arXiv.2503.19865">doi:10.48550/arXiv.2503.19865</a>.</li>
+<li><b>PeleLMeX: Turbulent H2 Jet Flames.</b>
+<br>T.L. Howarth, S.&nbsp;Nerzak, P.&nbsp;Gruhlke, J.T. Lipkowicz, L.&nbsp;Panek, S.&nbsp;Pfadler, M.&nbsp;Gauding, and H.&nbsp;Pitsch.
+Structure and nitrogen oxide emissions of confined turbulent hydrogen jet flames.
+<em>Proceedings of the Combustion Institute</em>, 41:105851, 2025.
+<a href="https://doi.org/10.1016/j.proci.2025.105851">doi:10.1016/j.proci.2025.105851</a>.</li>
+<li><b>PeleC: Liquid ammonia combustion.</b>
+<br>Z.&nbsp;Huang, H.&nbsp;Wang, Q.&nbsp;Meng, K.&nbsp;Luo, and J.&nbsp;Fan.
+Combustion <span class="bibtex-protected">Characteristics</span> of <span class="bibtex-protected">Liquid</span> <span class="bibtex-protected">Ammonia</span> <span class="bibtex-protected">Direct</span> <span class="bibtex-protected">Injection</span> <span class="bibtex-protected">Under</span> <span class="bibtex-protected">High</span>-<span class="bibtex-protected">Pressure</span> <span class="bibtex-protected">Conditions</span> <span class="bibtex-protected">Using</span> <span class="bibtex-protected">DNS</span>.
+<em>Energies</em>, 18(9):2228, January 2025.
+<a href="https://doi.org/10.3390/en18092228">doi:10.3390/en18092228</a>.</li>
+<li><b>PeleC: Deflagration-to-detonation transition.</b>
+<br>F.&nbsp;Illacanchi, A.&nbsp;Mendiburu, L.&nbsp;Bravo, P.&nbsp;Khare, and C.&nbsp;Celis.
+Distorted tulip flame: <span class="bibtex-protected">On</span> the mechanisms controlling premixed flame acceleration in closed channels.
+<em>International Communications in Heat and Mass Transfer</em>, 169:109810, December 2025.
+<a href="https://doi.org/10.1016/j.icheatmasstransfer.2025.109810">doi:10.1016/j.icheatmasstransfer.2025.109810</a>.</li>
+<li><b>PeleC: High speed turbulent fluid structure interaction.</b>
+<br>E.&nbsp;S. Kimmel, D.&nbsp;Huang, V.&nbsp;Sharma, J.&nbsp;Singh, V.&nbsp;Raman, and P.&nbsp;P. Friedmann.
+Turbulence and <span class="bibtex-protected">Upstream</span> <span class="bibtex-protected">Shock</span> <span class="bibtex-protected">Wave</span>-<span class="bibtex-protected">Boundary</span> <span class="bibtex-protected">Layer</span> <span class="bibtex-protected">Interaction</span> <span class="bibtex-protected">Effects</span> on <span class="bibtex-protected">Compliant</span> <span class="bibtex-protected">Structures</span>.
+<em>AIAA Journal</em>, 63(9):3641–3653, September 2025.
+<a href="https://doi.org/10.2514/1.J065095">doi:10.2514/1.J065095</a>.</li>
+<li><b>PeleLMeX: Stability analysis for ammonia/hydrogen flames.</b>
+<br>T.&nbsp;Lehmann, L.&nbsp;Berger, T.&nbsp;L. Howarth, M.&nbsp;Gauding, S.&nbsp;Girhe, B.&nbsp;B. Dally, and H.&nbsp;Pitsch.
+Comprehensive linear stability analysis for intrinsic instabilities in premixed ammonia/hydrogen/air flames.
+<em>Combustion and Flame</em>, 273:113927, March 2025.
+<a href="https://doi.org/10.1016/j.combustflame.2024.113927">doi:10.1016/j.combustflame.2024.113927</a>.</li>
+<li><b>PeleLMeX: NOx in laminar H2?NH3 flames.</b>
+<br>T.&nbsp;Lehmann, N.&nbsp;Dimidziev, T.&nbsp;L. Howarth, M.&nbsp;Gauding, and H.&nbsp;Pitsch.
+Effects of <span class="bibtex-protected">Intrinsic</span> <span class="bibtex-protected">Flame</span> <span class="bibtex-protected">Instabilities</span> on <span class="bibtex-protected">Nitrogen</span> <span class="bibtex-protected">Oxide</span> <span class="bibtex-protected">Formation</span> in <span class="bibtex-protected">Laminar</span> <span class="bibtex-protected">Premixed</span> <span class="bibtex-protected">Ammonia</span>/<span class="bibtex-protected">Hydrogen</span>/<span class="bibtex-protected">Air</span> <span class="bibtex-protected">Flames</span>.
+<em>Proceedings of the Combustion Institute</em>, 41:105961, 2025.
+arXiv:2503.13370 [physics].
+<a href="https://doi.org/10.1016/j.proci.2025.105961">doi:10.1016/j.proci.2025.105961</a>.</li>
+<li><b>PeleLMeX: NOx in H2 Micromix Combustors.</b>
+<br>Z.&nbsp;Li, P.&nbsp;Versailles, M.&nbsp;Vabre, E.&nbsp;R. Hawkes, and B.&nbsp;Savard.
+<span class="bibtex-protected">NO</span> x production in a canonical <span class="bibtex-protected">Micromix</span> hydrogen flame.
+<em>Proceedings of the Combustion Institute</em>, 41:105793, 2025.
+<a href="https://doi.org/10.1016/j.proci.2025.105793">doi:10.1016/j.proci.2025.105793</a>.</li>
+<li><b>PeleLMeX: Bouyant plumes.</b>
+<br>M.&nbsp;Meehan, P.&nbsp;Carlotti, and J.&nbsp;Hewson.
+Assessment of integral models for non-<span class="bibtex-protected">Boussinesq</span> lazy plumes using numerical simulations.
+<em>Journal of Fluid Mechanics</em>, 1025:A16, December 2025.
+<a href="https://doi.org/10.1017/jfm.2025.10920">doi:10.1017/jfm.2025.10920</a>.</li>
+<li><b>PeleC: Spray jet in crossflow flames.</b>
+<br>Q.&nbsp;Meng, H.&nbsp;Wang, Z.&nbsp;Chang, M.&nbsp;Cheng, Z.&nbsp;Huang, K.&nbsp;Luo, and J.&nbsp;Fan.
+Direct numerical simulation studies of spray jet flames in hot vitiated crossflow.
+<em>Fuel</em>, 389:134543, June 2025.
+<a href="https://doi.org/10.1016/j.fuel.2025.134543">doi:10.1016/j.fuel.2025.134543</a>.</li>
+<li><b>PeleLMeX: Instability in H2/CH4 Flames.</b>
+<br>H.&nbsp;Nicolai, V.&nbsp;Schuh, A.&nbsp;Bähr, M.&nbsp;Schneider, F.&nbsp;Rong, D.&nbsp;Kaddar, M.&nbsp;Bode, and C.&nbsp;Hasse.
+Laminar and turbulent hydrogen-enriched methane flames: <span class="bibtex-protected">Interaction</span> of thermodiffusive instabilities and local fuel demixing.
+<em>Proceedings of the Combustion Institute</em>, 41:105885, 2025.
+<a href="https://doi.org/10.1016/j.proci.2025.105885">doi:10.1016/j.proci.2025.105885</a>.</li>
+<li><b>PeleLMeX: Unstable H2/CO2 Flames.</b>
+<br>M.&nbsp;Pandey, K.&nbsp;Agrawal, and A.&nbsp;Ray.
+Numerical studies on intrinsically unstable <span class="bibtex-protected">H</span> 2 /<span class="bibtex-protected">CO</span> 2 flames: <span class="bibtex-protected">Effect</span> of <span class="bibtex-protected">CO</span> 2 dilution, equivalence ratio, temperature and pressure.
+<em>Combustion and Flame</em>, 279:114307, September 2025.
+<a href="https://doi.org/10.1016/j.combustflame.2025.114307">doi:10.1016/j.combustflame.2025.114307</a>.</li>
+<li><b>PeleC: H2 and CH4 Tulip Flames.</b>
+<br>C.&nbsp;Qian and M.&nbsp;A. Liberman.
+Influence of <span class="bibtex-protected">Chemical</span> <span class="bibtex-protected">Kinetics</span> on <span class="bibtex-protected">Tulip</span> <span class="bibtex-protected">Flame</span> <span class="bibtex-protected">Formation</span> in <span class="bibtex-protected">Highly</span> <span class="bibtex-protected">Reactive</span> (<span class="bibtex-protected">H2</span>/<span class="bibtex-protected">Air</span>) and <span class="bibtex-protected">Low</span> <span class="bibtex-protected">Reactive</span> (<span class="bibtex-protected">CH4</span>/<span class="bibtex-protected">Air</span>) <span class="bibtex-protected">Mixtures</span>.
+<em>Energies</em>, 18(4):885, January 2025.
+<a href="https://doi.org/10.3390/en18040885">doi:10.3390/en18040885</a>.</li>
+<li><b>PeleC: Turbulence modeling for sCO2 jets.</b>
+<br>J.&nbsp;Ream, M.&nbsp;T. H.&nbsp;d. Frahan, S.&nbsp;Yellapantula, M.&nbsp;J. Martin, M.&nbsp;Sussman, and R.&nbsp;Grout.
+Comparison of turbulence statistics in isothermal and non-isothermal large eddy simulations of supercritical carbon dioxide jets.
+September 2025.
+arXiv:2509.18528 [physics].
+<a href="https://doi.org/10.48550/arXiv.2509.18528">doi:10.48550/arXiv.2509.18528</a>.</li>
+<li><b>PeleC: Deflagration-to-detonation transition.</b>
+<br>C.&nbsp;Ren, X.&nbsp;Cai, R.&nbsp;Deiterding, and X.&nbsp;Wang.
+Mechanism of <span class="bibtex-protected">Mach</span> stem-induced initiation in non-uniform supersonic inflow with transverse injection.
+<em>Physics of Fluids</em>, 37(10):101704, October 2025.
+<a href="https://doi.org/10.1063/5.0290990">doi:10.1063/5.0290990</a>.</li>
+<li><b>PeleC: PaSR modeling for RDEs.</b>
+<br>S.&nbsp;Ruiz, S.&nbsp;Valencia, F.&nbsp;Illacanchi, A.&nbsp;Mendiburu, L.&nbsp;Bravo, P.&nbsp;Khare, and C.&nbsp;Celis.
+Numerical <span class="bibtex-protected">Assessment</span> of a <span class="bibtex-protected">Partially</span> <span class="bibtex-protected">Stirred</span> <span class="bibtex-protected">Reactor</span>-<span class="bibtex-protected">Based</span> <span class="bibtex-protected">Combustion</span> <span class="bibtex-protected">Model</span> <span class="bibtex-protected">Using</span> a <span class="bibtex-protected">High</span>-<span class="bibtex-protected">Fidelity</span> <span class="bibtex-protected">CFD</span> <span class="bibtex-protected">Tool</span>.
+In <em>International Mechanical Engineering Congress and Exposition</em>. American Society of Mechanical Engineers Digital Collection, January 2025.
+<a href="https://doi.org/10.1115/IMECE2024-145408">doi:10.1115/IMECE2024-145408</a>.</li>
+<li><b>PeleLMeX: High-Ka H2 flames.</b>
+<br>G.S. Russell, T.L. Howarth, A.W. Skiba, C.D. Carter, and A.J. Aspden.
+Turbulence-flame interactions in high-<span class="bibtex-protected">Karlovitz</span>-number lean premixed hydrogen piloted jet flames.
+<em>Proceedings of the Combustion Institute</em>, 41:105868, 2025.
+<a href="https://doi.org/10.1016/j.proci.2025.105868">doi:10.1016/j.proci.2025.105868</a>.</li>
+<li><b>PeleLMeX: SATF effects on Soot.</b>
+<br>B.&nbsp;S.&nbsp;Soriano and J.&nbsp;Chen.
+High <span class="bibtex-protected">Fidelity</span> <span class="bibtex-protected">Simulation</span> of the <span class="bibtex-protected">Soot</span> <span class="bibtex-protected">Formation</span> in a <span class="bibtex-protected">Lab</span>-<span class="bibtex-protected">Scale</span> <span class="bibtex-protected">Combustor</span> <span class="bibtex-protected">Using</span> <span class="bibtex-protected">Sustainable</span> <span class="bibtex-protected">Aviation</span> <span class="bibtex-protected">Fuel</span>.
+In <em><span class="bibtex-protected">AIAA</span> <span class="bibtex-protected">SCITECH</span> 2025 <span class="bibtex-protected">Forum</span></em>, <span class="bibtex-protected">AIAA</span> <span class="bibtex-protected">SciTech</span> <span class="bibtex-protected">Forum</span>.
+American Institute of Aeronautics and Astronautics, January 2025.
+<a href="https://doi.org/10.2514/6.2025-2090">doi:10.2514/6.2025-2090</a>.</li>
+<li><b>PeleC, PeleLM: Ignition in dual fuel engines.</b>
+<br>J.&nbsp;S. Salinas, H.&nbsp;Kolla, M.&nbsp;Rieth, K.&nbsp;S. Jung, J.&nbsp;Chen, J.&nbsp;Bennett, M.&nbsp;Arienti, L.&nbsp;Esclapez, M.&nbsp;Day, N.&nbsp;Marsaglia, C.&nbsp;Harrison, T.&nbsp;L. Turton, and J.&nbsp;Ahrens.
+In situ multi-tier auto-ignition detection applied to dual-fuel combustion simulations.
+<em>Combustion and Flame</em>, 279:114273, September 2025.
+<a href="https://doi.org/10.1016/j.combustflame.2025.114273">doi:10.1016/j.combustflame.2025.114273</a>.</li>
+<li><b>PeleLMeX: Thickened flame models for H2.</b>
+<br>V.&nbsp;Schuh, D.&nbsp;Kaddar, A.&nbsp;Bähr, M.&nbsp;Bode, C.&nbsp;Hasse, and H.&nbsp;Nicolai.
+An <span class="bibtex-protected">Extended</span> <span class="bibtex-protected">Artificially</span> <span class="bibtex-protected">Thickened</span> <span class="bibtex-protected">Flame</span> <span class="bibtex-protected">Model</span> for <span class="bibtex-protected">Turbulent</span> <span class="bibtex-protected">Hydrogen</span> and <span class="bibtex-protected">Hydrogen</span>-<span class="bibtex-protected">Enriched</span> <span class="bibtex-protected">Flames</span> <span class="bibtex-protected">With</span> <span class="bibtex-protected">Intrinsic</span> <span class="bibtex-protected">Instabilities</span> <span class="bibtex-protected">Under</span> <span class="bibtex-protected">Gas</span> <span class="bibtex-protected">Turbine</span> <span class="bibtex-protected">Relevant</span> <span class="bibtex-protected">Conditions</span>.
+<em>Journal of Engineering for Gas Turbines and Power</em>, October 2025.
+<a href="https://doi.org/10.1115/1.4069549">doi:10.1115/1.4069549</a>.</li>
+<li><b>PeleLMeX: Synthetic aviation turbine fuels flame stabilization.</b>
+<br>B.&nbsp;S. Soriano, L.&nbsp;D. Owen, and J.&nbsp;H. Chen.
+Edge flame speed analysis of a swirl-stabilized spray flame using sustainable aviation fuels: <span class="bibtex-protected">A</span> direct numerical simulation study.
+<em>Combustion and Flame</em>, 277:114213, July 2025.
+<a href="https://doi.org/10.1016/j.combustflame.2025.114213">doi:10.1016/j.combustflame.2025.114213</a>.</li>
+<li><b>PeleC: Channel Detonations.</b>
+<br>S.&nbsp;Ramachandran, R.&nbsp;Dushe, and S.&nbsp;Yang.
+Comparing <span class="bibtex-protected">Shock</span>-<span class="bibtex-protected">Attached</span> and <span class="bibtex-protected">Lab</span> <span class="bibtex-protected">Frames</span> of <span class="bibtex-protected">Reference</span> for <span class="bibtex-protected">Numerical</span> <span class="bibtex-protected">Simulations</span> of <span class="bibtex-protected">Two</span>-<span class="bibtex-protected">Dimensional</span> <span class="bibtex-protected">Channel</span> <span class="bibtex-protected">Detonations</span>.
+In <em><span class="bibtex-protected">AIAA</span> <span class="bibtex-protected">SCITECH</span> 2025 <span class="bibtex-protected">Forum</span></em>, <span class="bibtex-protected">AIAA</span> <span class="bibtex-protected">SciTech</span> <span class="bibtex-protected">Forum</span>.
+American Institute of Aeronautics and Astronautics, January 2025.
+<a href="https://doi.org/10.2514/6.2025-1386">doi:10.2514/6.2025-1386</a>.</li>
+<li><b>PeleC: Micro-jetting in Detonations.</b>
+<br>S.&nbsp;Ramachandran, R.&nbsp;Dushe, R.&nbsp;Hytovick, L.&nbsp;Berson, K.&nbsp;A. Ahmed, and S.&nbsp;Yang.
+Micro-<span class="bibtex-protected">Jetting</span> <span class="bibtex-protected">Dynamics</span> in <span class="bibtex-protected">Channel</span> <span class="bibtex-protected">Detonations</span> of <span class="bibtex-protected">High</span>-<span class="bibtex-protected">Activation</span> <span class="bibtex-protected">Energy</span> <span class="bibtex-protected">Mixtures</span>.
+In <em><span class="bibtex-protected">AIAA</span> <span class="bibtex-protected">SCITECH</span> 2025 <span class="bibtex-protected">Forum</span></em>, <span class="bibtex-protected">AIAA</span> <span class="bibtex-protected">SciTech</span> <span class="bibtex-protected">Forum</span>.
+American Institute of Aeronautics and Astronautics, January 2025.
+<a href="https://doi.org/10.2514/6.2025-1585">doi:10.2514/6.2025-1585</a>.</li>
+<li><b>PeleC: Micro-jetting in Detonations.</b>
+<br>S.&nbsp;Ramachandran and S.&nbsp;Yang.
+Three-<span class="bibtex-protected">Dimensional</span> <span class="bibtex-protected">Micro</span>-<span class="bibtex-protected">Jetting</span> <span class="bibtex-protected">Dynamics</span> in a <span class="bibtex-protected">Stoichiometric</span> <span class="bibtex-protected">H2</span>/<span class="bibtex-protected">Air</span> <span class="bibtex-protected">Detonation</span>.
+In <em><span class="bibtex-protected">AIAA</span> <span class="bibtex-protected">SCITECH</span> 2025 <span class="bibtex-protected">Forum</span></em>, <span class="bibtex-protected">AIAA</span> <span class="bibtex-protected">SciTech</span> <span class="bibtex-protected">Forum</span>.
+American Institute of Aeronautics and Astronautics, January 2025.
+<a href="https://doi.org/10.2514/6.2025-1966">doi:10.2514/6.2025-1966</a>.</li>
+<li><b>PelePhysics: Physical properties for Eulerian stochastic fields.</b>
+<br>T.-H. Un and S.&nbsp;Navarro-Martinez.
+On the performance of the joint velocity-scalar <span class="bibtex-protected">PDF</span> method near walls.
+<em>Proceedings of the Combustion Institute</em>, 41:105838, 2025.
+<a href="https://doi.org/10.1016/j.proci.2025.105838">doi:10.1016/j.proci.2025.105838</a>.</li>
+<li><b>PelePhysics: Reaction source terms for Eulerian stochastic fields.</b>
+<br>T.-H. Un and S.&nbsp;Navarro-Martinez.
+Stochastic fields with adaptive mesh refinement for high-speed turbulent combustion.
+<em>Combustion and Flame</em>, 272:113897, February 2025.
+<a href="https://doi.org/10.1016/j.combustflame.2024.113897">doi:10.1016/j.combustflame.2024.113897</a>.</li>
+<li><b>PeleC: Deflagration-to-detonation transition.</b>
+<br>S.&nbsp;Valencia, F.&nbsp;Illacanchi, L.&nbsp;d. Azevedo, A.&nbsp;Z. Mendiburu, L.&nbsp;Bravo, P.&nbsp;Khare, and C.&nbsp;Celis.
+Influence of <span class="bibtex-protected">Obstacle</span> <span class="bibtex-protected">Separation</span> <span class="bibtex-protected">Distance</span> on the <span class="bibtex-protected">Acceleration</span> of <span class="bibtex-protected">Premixed</span> <span class="bibtex-protected">Methane</span>/<span class="bibtex-protected">Air</span> <span class="bibtex-protected">Flames</span> in a <span class="bibtex-protected">Closed</span> <span class="bibtex-protected">Channel</span>.
+<em>Flow, Turbulence and Combustion</em>, 115(4):1729–1753, November 2025.
+<a href="https://doi.org/10.1007/s10494-025-00691-2">doi:10.1007/s10494-025-00691-2</a>.</li>
+<li><b>PeleLMeX: Lean H2 flames in a Hele-Shaw cell.</b>
+<br>L.&nbsp;Yang, Y.&nbsp;Wang, T.&nbsp;Zhang, X.&nbsp;Gou, W.&nbsp;Kong, and Z.&nbsp;Chen.
+Propagation of ultra-lean hydrogen/air flames in a <span class="bibtex-protected">Hele</span>-<span class="bibtex-protected">Shaw</span> cell.
+<em>Combustion and Flame</em>, 281:114444, November 2025.
+<a href="https://doi.org/10.1016/j.combustflame.2025.114444">doi:10.1016/j.combustflame.2025.114444</a>.</li>
+<li><b>PeleLMeX: Ammonia addition effects on soot.</b>
+<br>H.&nbsp;Du, J.&nbsp;Zhang, S.&nbsp;Hu, and L.&nbsp;Zhou.
+Investigation of ammonia addition on soot radiation effects in n-heptane laminar diffusion flames at elevated pressure.
+<em>Fuel</em>, 405:136643, February 2026.
+<a href="https://doi.org/10.1016/j.fuel.2025.136643">doi:10.1016/j.fuel.2025.136643</a>.</li>
+<li><b>PeleC, PeleLMeX: Nanosecond plasma discharges.</b>
+<br>A.&nbsp;Duarte&nbsp;Gomez, N.&nbsp;Deak, L.&nbsp;Esclapez, M.&nbsp;Day, and F.&nbsp;Bisetti.
+Mathematical models and numerical methods for high-fidelity simulation of ignition of reactive mixtures by nanosecond plasma discharges in realistic configurations.
+<em>Combustion Theory and Modelling</em>, 30(2):147–193, February 2026.
+_eprint: https://doi.org/10.1080/13647830.2026.2621925.
+<a href="https://doi.org/10.1080/13647830.2026.2621925">doi:10.1080/13647830.2026.2621925</a>.</li>
+<li><b>PeleC: Turbulent mixing of H2 jets.</b>
+<br>F.&nbsp;Duronio, A.&nbsp;Di&nbsp;Mascio, and A.&nbsp;Montanaro.
+Combined experimental and numerical investigation of the turbulent mixing of hydrogen jets issued from a hollow cone injector.
+<em>International Journal of Hydrogen Energy</em>, 223:154172, April 2026.
+<a href="https://doi.org/10.1016/j.ijhydene.2026.154172">doi:10.1016/j.ijhydene.2026.154172</a>.</li>
+<li><b>PeleC: Detonation microjets in channels.</b>
+<br>R.&nbsp;Dushe, S.&nbsp;Ramachandran, and S.&nbsp;Yang.
+Morphology of <span class="bibtex-protected">Micro</span>-<span class="bibtex-protected">Jets</span> in <span class="bibtex-protected">Fully</span> <span class="bibtex-protected">Three</span>-<span class="bibtex-protected">Dimensional</span> vs. <span class="bibtex-protected">Narrow</span>-<span class="bibtex-protected">Channel</span> <span class="bibtex-protected">Detonations</span>.
+In <em><span class="bibtex-protected">AIAA</span> <span class="bibtex-protected">SCITECH</span> 2026 <span class="bibtex-protected">Forum</span></em>.
+American Institute of Aeronautics and Astronautics, January 2026.
+<a href="https://doi.org/10.2514/6.2026-1423">doi:10.2514/6.2026-1423</a>.</li>
+<li><b>PeleC: Oblique detonations.</b>
+<br>R.&nbsp;Dushe, S.&nbsp;Ramachandran, and S.&nbsp;Yang.
+Transverse <span class="bibtex-protected">Waves</span> and <span class="bibtex-protected">Ignition</span> <span class="bibtex-protected">Dynamics</span> in <span class="bibtex-protected">Oblique</span> <span class="bibtex-protected">Detonations</span> of <span class="bibtex-protected">Different</span> <span class="bibtex-protected">Shock</span>-<span class="bibtex-protected">Detonation</span> <span class="bibtex-protected">Transition</span> <span class="bibtex-protected">Types</span>.
+In <em><span class="bibtex-protected">AIAA</span> <span class="bibtex-protected">SCITECH</span> 2026 <span class="bibtex-protected">Forum</span></em>.
+American Institute of Aeronautics and Astronautics, January 2026.
+<a href="https://doi.org/10.2514/6.2026-0600">doi:10.2514/6.2026-0600</a>.</li>
+<li><b>PeleC: Hydrogen/air oblique detonations.</b>
+<br>C.&nbsp;Euteneuer, S.&nbsp;Ramachandran, and S.&nbsp;Yang.
+Three-<span class="bibtex-protected">Dimensional</span> <span class="bibtex-protected">Structures</span> of <span class="bibtex-protected">H</span> 2 /<span class="bibtex-protected">Air</span> <span class="bibtex-protected">Oblique</span> <span class="bibtex-protected">Detonation</span> <span class="bibtex-protected">Waves</span>.
+In <em><span class="bibtex-protected">AIAA</span> <span class="bibtex-protected">SCITECH</span> 2026 <span class="bibtex-protected">Forum</span></em>.
+American Institute of Aeronautics and Astronautics, January 2026.
+<a href="https://doi.org/10.2514/6.2026-0598">doi:10.2514/6.2026-0598</a>.</li>
+<li><b>PeleLMeX: Thermodiffusive instabilities in H2/CH4 flames.</b>
+<br>E.F. Hunt, A.&nbsp;Moitro, and A.J. Aspden.
+Thermodiffusively-unstable lean premixed hydrogen–methane blends: <span class="bibtex-protected">Phenomenology</span> and empirical modelling.
+<em>Combustion and Flame</em>, 286:114845, April 2026.
+<a href="https://doi.org/10.1016/j.combustflame.2026.114845">doi:10.1016/j.combustflame.2026.114845</a>.</li>
+<li><b>PeleC: Cavity-stabilized supersonic combustor.</b>
+<br>K.&nbsp;Jin, X.&nbsp;Cai, R.&nbsp;Hong, L.&nbsp;Zhang, and J.&nbsp;Liang.
+Numerical study on flow choking mechanism in a cavity-based supersonic combustor with low inflow <span class="bibtex-protected">Mach</span> number.
+<em>Physics of Fluids</em>, 38(3):036118, March 2026.
+<a href="https://doi.org/10.1063/5.0316752">doi:10.1063/5.0316752</a>.</li>
+<li><b>PeleC: High speed turbulent fluid structure interaction.</b>
+<br>E.&nbsp;S. Kimmel, D.&nbsp;Huang, V.&nbsp;Sharma, J.&nbsp;Singh, V.&nbsp;Raman, and P.&nbsp;P. Friedmann.
+Reduced-<span class="bibtex-protected">Order</span> <span class="bibtex-protected">Modeling</span> of <span class="bibtex-protected">Turbulent</span> <span class="bibtex-protected">Flows</span> for <span class="bibtex-protected">High</span>-<span class="bibtex-protected">Speed</span> <span class="bibtex-protected">Aerothermoelastic</span> <span class="bibtex-protected">Analysis</span>.
+<em>AIAA Journal</em>, 64(4):2230–2252, April 2026.
+<a href="https://doi.org/10.2514/1.J065721">doi:10.2514/1.J065721</a>.</li>
+<li><b>PeleLMeX: Instabilties in H2 flames.</b>
+<br>M.&nbsp;Pandey, K.&nbsp;Agrawal, and A.&nbsp;Ray.
+Numerical studies on cellular and pulsating instabilities in hydrogen flames.
+<em>Combustion and Flame</em>, 285:114763, March 2026.
+<a href="https://doi.org/10.1016/j.combustflame.2025.114763">doi:10.1016/j.combustflame.2025.114763</a>.</li>
+<li><b>PeleC: Detonation cellular structures.</b>
+<br>S.&nbsp;Ramachandran, R.&nbsp;Johnson, and S.&nbsp;Yang.
+Effects of <span class="bibtex-protected">Initial</span> <span class="bibtex-protected">Conditions</span> and <span class="bibtex-protected">Chemical</span> <span class="bibtex-protected">Kinetics</span> on <span class="bibtex-protected">Cellular</span> <span class="bibtex-protected">Multiplicity</span> of <span class="bibtex-protected">Regular</span> <span class="bibtex-protected">Channel</span> <span class="bibtex-protected">Hydrogen</span> <span class="bibtex-protected">Detonations</span>.
+In <em><span class="bibtex-protected">AIAA</span> <span class="bibtex-protected">SCITECH</span> 2026 <span class="bibtex-protected">Forum</span></em>.
+American Institute of Aeronautics and Astronautics, January 2026.
+<a href="https://doi.org/10.2514/6.2026-2026">doi:10.2514/6.2026-2026</a>.</li>
+<li><b>PeleLMeX: Alumnium droplet combustion.</b>
+<br>M.&nbsp;Rieth, J.&nbsp;S. Salinas, M.&nbsp;Arienti, T.&nbsp;Voskuilen, A.&nbsp;A. Egeln, and M.&nbsp;C. Welliver.
+Finite-<span class="bibtex-protected">Rate</span> <span class="bibtex-protected">Chemistry</span> <span class="bibtex-protected">Simulations</span> of <span class="bibtex-protected">Aluminum</span> <span class="bibtex-protected">Droplet</span> <span class="bibtex-protected">Ignition</span>.
+In <em><span class="bibtex-protected">AIAA</span> <span class="bibtex-protected">SCITECH</span> 2026 <span class="bibtex-protected">Forum</span></em>, <span class="bibtex-protected">AIAA</span> <span class="bibtex-protected">SciTech</span> <span class="bibtex-protected">Forum</span>.
+American Institute of Aeronautics and Astronautics, January 2026.
+<a href="https://doi.org/10.2514/6.2026-0391">doi:10.2514/6.2026-0391</a>.</li>
+<li><b>PeleC: Imploding detonations.</b>
+<br>L.&nbsp;Shi, E.&nbsp;Fan, and C.-Y. Wen.
+Two-dimensional numerical simulation of imploding detonations.
+<em>Shock Waves</em>, 36(1):2, March 2026.
+<a href="https://doi.org/10.1007/s00193-026-01261-9">doi:10.1007/s00193-026-01261-9</a>.</li>
+<li><b>PeleLMeX: Linear stability of H2 flames.</b>
+<br>S.&nbsp;Xie, C.&nbsp;Mounaïm-Rousselle, and H.&nbsp;Zhang.
+Linear stability analysis of laminar premixed planar <span class="bibtex-protected">H2</span>/<span class="bibtex-protected">N2O</span>/<span class="bibtex-protected">N2</span> flames.
+<em>Combustion and Flame</em>, 286:114846, April 2026.
+<a href="https://doi.org/10.1016/j.combustflame.2026.114846">doi:10.1016/j.combustflame.2026.114846</a>.</li>
+<li><b>PeleC, PeleLMeX: Combustion models for Oxycombustion.</b>
+<br>S.&nbsp;Yellapantula, B.&nbsp;Perry, M.&nbsp;Rahimi, D.&nbsp;Yi, K.&nbsp;Peterson, and M.&nbsp;J. Martin.
+A <span class="bibtex-protected">Reduced</span> <span class="bibtex-protected">Order</span> <span class="bibtex-protected">Model</span> <span class="bibtex-protected">Approach</span> <span class="bibtex-protected">Based</span> on <span class="bibtex-protected">Progress</span> <span class="bibtex-protected">Variables</span> for <span class="bibtex-protected">Simulation</span> of <span class="bibtex-protected">Oxycombustion</span> in the <span class="bibtex-protected">Allam</span>-<span class="bibtex-protected">Fetvedt</span> <span class="bibtex-protected">Cycle</span>.
+In <em><span class="bibtex-protected">AIAA</span> <span class="bibtex-protected">SCITECH</span> 2026 <span class="bibtex-protected">Forum</span></em>, <span class="bibtex-protected">AIAA</span> <span class="bibtex-protected">SciTech</span> <span class="bibtex-protected">Forum</span>.
+American Institute of Aeronautics and Astronautics, January 2026.
+<a href="https://doi.org/10.2514/6.2026-1381">doi:10.2514/6.2026-1381</a>.</li>
+<li><b>PeleC: Detonation of H2 mixtures.</b>
+<br>Z.&nbsp;Zhang, H.&nbsp;Yan, and H.&nbsp;Zhang.
+Direct detonation initiation by an elliptical hotspot in hydrogen/oxygen/argon mixtures.
+<em>Applications in Energy and Combustion Science</em>, 26:100483, June 2026.
+<a href="https://doi.org/10.1016/j.jaecs.2026.100483">doi:10.1016/j.jaecs.2026.100483</a>.</li>
+<li><b>PeleLMeX: Soot in microgravity flames.</b>
+<br>J.&nbsp;Zhang, H.&nbsp;Du, S.&nbsp;Hu, W.&nbsp;Ji, and L.&nbsp;Zhou.
+Radiation-<span class="bibtex-protected">Induced</span> <span class="bibtex-protected">Structural</span> <span class="bibtex-protected">Modifications</span> and <span class="bibtex-protected">Soot</span> <span class="bibtex-protected">Evolution</span> in <span class="bibtex-protected">Microgravity</span> <span class="bibtex-protected">Laminar</span> <span class="bibtex-protected">Flames</span> at <span class="bibtex-protected">Elevated</span> <span class="bibtex-protected">Pressure</span>.
+<em>Microgravity Science and Technology</em>, 38(1):8, January 2026.
+<a href="https://doi.org/10.1007/s12217-025-10233-0">doi:10.1007/s12217-025-10233-0</a>.</li>
+<li><b>PeleLMeX: NO in H2/NH3 premixed flames.</b>
+<br>J.&nbsp;Zheng, H.&nbsp;Wang, K.&nbsp;Luo, and J.&nbsp;Fan.
+The characteristics of stability and <span class="bibtex-protected">NO</span> formation in lean hydrogen-enriched ammonia premixed flames with varying body force.
+<em>Fuel</em>, 410:138006, April 2026.
+<a href="https://doi.org/10.1016/j.fuel.2025.138006">doi:10.1016/j.fuel.2025.138006</a>.</li>
+<li><b>PeleC: Supercritical CO2 counterflow flames.</b>
+<br>J.&nbsp;Zheng, H.&nbsp;Wang, R.&nbsp;Mével, K.&nbsp;Luo, and J.&nbsp;Fan.
+Direct numerical simulation of turbulent counterflow diffusion <span class="bibtex-protected">CH4</span>/<span class="bibtex-protected">O2</span> flames in a supercritical <span class="bibtex-protected">CO2</span> environment.
+<em>The Journal of Supercritical Fluids</em>, 233:106945, July 2026.
+<a href="https://doi.org/10.1016/j.supflu.2026.106945">doi:10.1016/j.supflu.2026.106945</a>.</li>
+<li><b>PeleLMeX: Body force effects on premixed H2 flames.</b>
+<br>J.&nbsp;Zheng, H.&nbsp;Wang, E.&nbsp;R. Hawkes, K.&nbsp;Luo, and J.&nbsp;Fan.
+The effects of body force on the flame and turbulence characteristics in premixed hydrogen/air flames at various <span class="bibtex-protected">Karlovitz</span> numbers.
+<em>Combustion and Flame</em>, 285:114717, March 2026.
+<a href="https://doi.org/10.1016/j.combustflame.2025.114717">doi:10.1016/j.combustflame.2025.114717</a>.</li>
+</ol>
+<!-- EndUsePubs -->
           </section>
 
     </section>
